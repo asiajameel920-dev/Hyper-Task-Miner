@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HyperTask Miner</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body style="text-align:center;background:#0f172a;color:white;font-family:Arial">
+
+<h2>⛏️ HyperTask Miner</h2>
+
+<p>🎁 Join bonus: 1000 coins</p>
+
+<a href="https://t.me/HyperTaskOfficial" target="_blank">
+<button>📢 Join Channel</button>
+</a>
+
+<br><br>
+
+<button onclick="start()">✅ I Joined – Start</button>
+
+<h3>🪙 Coins: <span id="c">0</span></h3>
+<button onclick="mine()">⛏️ Mine</button>
+
+<script>
+let coins = 0;
+function start(){
+  coins += 1000;
+  document.getElementById('c').innerText = coins;
+  alert("1000 coins added!");
+}
+function mine(){
+  coins++;
+  document.getElementById('c').innerText = coins;
+}
+</script>
+
+</body>
+</html>
